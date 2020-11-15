@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const ClientesController = require('./controllers/Clientes.controller')
 const ImoveisController = require('./controllers/Imoveis.controller')
-const MaterialController = require('./controllers/Material.controller')
+const MaterialController = require('./controllers/Materiais.controller')
 
 const routes = express.Router();
 
