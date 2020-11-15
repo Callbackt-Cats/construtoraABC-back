@@ -3,18 +3,18 @@ const crypto = require('crypto');
 
 module.exports = {
     async index(request, response) {
-        const produtos = await connection('Produtos').select('*');
-        return response.json(produtos)
+        const Clientes = await connection('Clientes').select('*');
+        return response.json(Clientes)
     },
 
     async create(request, response) {
-        const { nome, valor, quantidade } = request.body;
+        const { nome, email, cpf } = request.body;
         const id = crypto.randomBytes(5).toString('HEX');
-        await connection('Produtos').insert({
+        await connection('Clientes').insert({
             id,
             nome,
-            valor,
-            quantidade
+            email,
+            cpf
         })
         return response.json({ id });
     },
@@ -22,14 +22,14 @@ module.exports = {
     async delete(request, response) {
         const { id } = request.params;
 
-        await connection('Produtos').where('id', id).del();
+        await connection('Clientes').where('id', id).del();
 
         return response.json({ id });
     },  
 
     async update(request, response) {
         const { id, nome, valor, quantidade } = request.body;
-        await connection('Produtos').where('id', id).update({
+        await connection('Clientes').where('id', id).update({
             nome: nome,
             valor: valor,
             quantidade: quantidade         
