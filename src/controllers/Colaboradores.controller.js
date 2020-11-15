@@ -11,6 +11,7 @@ module.exports = {
         const { nome, email, cpf, tipo } = request.body;
         const id = crypto.randomBytes(5).toString('HEX');
         await connection('Colaboradores').insert({
+            id,
             nome,
             email,
             cpf,
