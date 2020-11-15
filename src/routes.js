@@ -5,6 +5,7 @@ const ClientesController = require('./controllers/Clientes.controller')
 const ImoveisController = require('./controllers/Imoveis.controller')
 const MaterialController = require('./controllers/Materiais.controller')
 const ColaboradoresController = require('./controllers/Colaboradores.controller')
+const ObrasController = require('./controllers/Obras.controller')
 
 const routes = express.Router();
 
@@ -29,5 +30,10 @@ routes.get('/Colaboradores', ColaboradoresController.index);
 routes.put('/Colaboradores', ColaboradoresController.create);
 routes.post('/Colaboradores', ColaboradoresController.update);
 routes.delete('/Colaboradores/:id', ColaboradoresController.delete);
+
+routes.get('/Obras', ObrasController.index);
+routes.put('/Obras', ObrasController.create);
+routes.post('/Obras', ObrasController.update);
+routes.delete('/Obras/:codigo', ObrasController.delete);
 
 module.exports = routes;
