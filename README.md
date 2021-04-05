@@ -54,7 +54,7 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 - **Descrição**: tipo **String** e obrigatório;
 
 
-### Material
+### Material 🚛 
 #### Atributos:
 
 - **Nome**: tipo **String** e obrigatório;
