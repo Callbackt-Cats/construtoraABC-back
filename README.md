@@ -30,3 +30,65 @@ O modelo de dados é definido através das **Migrations**, de modo que as tabela
 
 ### Controllers
 Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáveis por executar as funções dos nossos modelos de dados, como criar, editar, excluir e ler (CRUD).
+
+
+## Modelo de Dados 📖 
+
+### Cliente 💸  
+#### Atributos:
+
+- **Nome**: tipo **String** e obrigatório;
+
+- **Email**: tipo **String** e obrigatório;
+
+- **CPF**: tipo **String** e obrigatório;
+
+
+### Imóvel 🏬 
+#### Atributos:
+
+- **Endereço**: tipo **String** e obrigatório;
+
+- **idCliente**: tipo **String** e obrigatório;
+
+- **Descrição**: tipo **String** e obrigatório;
+
+
+### Material
+#### Atributos:
+
+- **Nome**: tipo **String** e obrigatório;
+
+- **Código**: tipo **String** e obrigatório;
+
+- **idFornecedor**: tipo **String** e obrigatório;
+
+- **idResponsável**: tipo **String** e obrigatório;
+
+
+### Colaborador 👲 
+#### Atributos:
+
+- **Nome**: tipo **String** e obrigatório;
+
+- **Email**: tipo **String** e obrigatório;
+
+- **CPF**: tipo **String** e obrigatório;
+
+- **Tipo**: tipo **String** e obrigatório;
+
+
+### Obra 🔨 
+#### Atributos:
+
+- **Endereço**: tipo **String** e obrigatório;
+
+- **Localização**: tipo **String** e obrigatório;
+
+- **Descrição**: tipo **String** e obrigatório;
+
+- **Valor**: tipo **String** e obrigatório;
+
+- **idImóvel**: tipo **String** e obrigatório;
+
+- **idEngenheiro**: tipo **String** e obrigatório;
