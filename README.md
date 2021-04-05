@@ -41,7 +41,17 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **Email**: tipo **String** e obrigatório;
 
-- **CPF**: tipo **String** e obrigatório;
+- **CPF**: tipo **String** e obrigatório.
+
+#### Métodos:
+
+- **Index**: lista os itens da Classe armazenados no banco de dados;
+
+- **Create**: cria um elemento do banco de dados;
+
+- **Delete** apaga um elemento da bando de dados;
+
+- **Update**: edita os dados de um elemento já existente no banco de dados.
 
 
 ### Imóvel 🏬 
@@ -51,7 +61,17 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **idCliente**: tipo **String** e obrigatório;
 
-- **Descrição**: tipo **String** e obrigatório;
+- **Descrição**: tipo **String** e obrigatório.
+
+#### Métodos:
+
+- **Index**: lista os itens da Classe armazenados no banco de dados;
+
+- **Create**: cria um elemento do banco de dados;
+
+- **Delete** apaga um elemento da bando de dados;
+
+- **Update**: edita os dados de um elemento já existente no banco de dados.
 
 
 ### Material 🚛 
@@ -65,6 +85,16 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **idResponsável**: tipo **String** e obrigatório;
 
+#### Métodos:
+
+- **Index**: lista os itens da Classe armazenados no banco de dados;
+
+- **Create**: cria um elemento do banco de dados;
+
+- **Delete** apaga um elemento da bando de dados;
+
+- **Update**: edita os dados de um elemento já existente no banco de dados.
+
 
 ### Colaborador 👲 
 #### Atributos:
@@ -77,6 +107,15 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **Tipo**: tipo **String** e obrigatório;
 
+#### Métodos:
+
+- **Index**: lista os itens da Classe armazenados no banco de dados;
+
+- **Create**: cria um elemento do banco de dados;
+
+- **Delete** apaga um elemento da bando de dados;
+
+- **Update**: edita os dados de um elemento já existente no banco de dados.
 
 ### Obra 🔨 
 #### Atributos:
@@ -92,3 +131,13 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 - **idImóvel**: tipo **String** e obrigatório;
 
 - **idEngenheiro**: tipo **String** e obrigatório;
+
+#### Métodos:
+
+- **Index**: lista os itens da Classe armazenados no banco de dados;
+
+- **Create**: cria um elemento do banco de dados;
+
+- **Delete** apaga um elemento da bando de dados;
+
+- **Update**: edita os dados de um elemento já existente no banco de dados.
