@@ -49,7 +49,7 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **Create**: cria um elemento do banco de dados;
 
-- **Delete** apaga um elemento da bando de dados;
+- **Delete**: apaga um elemento da bando de dados;
 
 - **Update**: edita os dados de um elemento já existente no banco de dados.
 
@@ -69,7 +69,7 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **Create**: cria um elemento do banco de dados;
 
-- **Delete** apaga um elemento da bando de dados;
+- **Delete**: apaga um elemento da bando de dados;
 
 - **Update**: edita os dados de um elemento já existente no banco de dados.
 
@@ -91,7 +91,7 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **Create**: cria um elemento do banco de dados;
 
-- **Delete** apaga um elemento da bando de dados;
+- **Delete**: apaga um elemento da bando de dados;
 
 - **Update**: edita os dados de um elemento já existente no banco de dados.
 
@@ -113,7 +113,7 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **Create**: cria um elemento do banco de dados;
 
-- **Delete** apaga um elemento da bando de dados;
+- **Delete**: apaga um elemento da bando de dados;
 
 - **Update**: edita os dados de um elemento já existente no banco de dados.
 
@@ -138,6 +138,6 @@ Os **Controllers** equivalem aos métodos das nossas *classes*. São responsáve
 
 - **Create**: cria um elemento do banco de dados;
 
-- **Delete** apaga um elemento da bando de dados;
+- **Delete**: apaga um elemento da bando de dados;
 
 - **Update**: edita os dados de um elemento já existente no banco de dados.
