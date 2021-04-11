@@ -1,32 +1,32 @@
 {
-  "name": "tcc-backend",
+  "name": "testes-chai-mocha",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "test": "mocha test --exit"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eduardoRG95/construtoraABC-back.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matheus A.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eduardoRG95/construtoraABC-back/issues"
   },
   "homepage": "https://github.com/eduardoRG95/construtoraABC-back#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "knex": "^0.21.12",
-    "sqlite3": "^5.0.0"
+    "@types/chai": "^4.2.16",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^8.3.2",
-    "nodemon": "^2.0.4"
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "chai-subset": "^1.6.0",
+    "mocha": "^6.0.2"
   },
   "test": "mocha test/* --reporter spec --exit"
 }
