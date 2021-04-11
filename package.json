@@ -27,5 +27,6 @@
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
     "nodemon": "^2.0.4"
-  }
+  },
+  "test": "mocha test/* --reporter spec --exit"
 }
