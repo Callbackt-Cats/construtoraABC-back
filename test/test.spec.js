@@ -7,8 +7,8 @@ const chaiHttp = require('chai-http');
 // Extensao da lib chai p/ verificar objetos
 const subSet = require('chai-subset');
 // importação do arquivo principal do nosso servidor, geralmente nomeado de “index.js” ou “server.js”
-const app = require('../controller/Clientes.controller');
-const index = require('../index');
+const app = require('../src/controllers/Clientes.controller');
+const index = require('../src/index');
 
 chai.use(chaiHttp);
 chai.use(subSet);

@@ -1,9 +1,9 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const cors = require('cors');
 
-express.use(bodyParser.urlencoded({ extended: false }));
-express.use(bodyParser.json());
+// express.use(bodyParser.urlencoded({ extended: false }));
+// express.use(bodyParser.json());
 
 const ClientesController = require('./controllers/Clientes.controller')
 const ImoveisController = require('./controllers/Imoveis.controller')
