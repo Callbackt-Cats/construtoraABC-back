@@ -3,8 +3,15 @@ const crypto = require('crypto');
 
 module.exports = {
     async index(request, response) {
-        const Clientes = await connection('Clientes').select('*');
-        return response.json(Clientes)
+        try {
+            const Clientes = await connection('Clientes').select('*');
+            return response.json(Clientes)
+        } catch (error) {
+            response.json({
+                error: true,
+                message: error.message
+            });
+        }
     },
 
     async create(request, response) {

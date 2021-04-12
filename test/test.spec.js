@@ -7,8 +7,8 @@ const chaiHttp = require('chai-http');
 // Extensao da lib chai p/ verificar objetos
 const subSet = require('chai-subset');
 // importação do arquivo principal do nosso servidor, geralmente nomeado de “index.js” ou “server.js”
-const app = require('../src/controllers/Clientes.controller');
-const index = require('../src/index');
+//const app = require('../src/controllers/Clientes.controller');
+const index = require('../src/controllers/Clientes.controller');
 
 chai.use(chaiHttp);
 chai.use(subSet);
@@ -31,18 +31,17 @@ const clienteSchema = {
 describe('Teste das funcoes de Clientes', () => {
 
     it('addCliente', () => {
-        const cliente = app.create('1234', 'matheus', 'mateus@gmail.com', '09099354665');
+        const cliente = index.create('/Clientes', ClientesController.create);
 
         // Verifica se as caracteristicas do objeto aluno é igual ao alunoSchema
         chai.expect(cliente).to.containSubset(clienteSchema);
     });
 });
 
-
 describe('Testes de integração', () => {
 
     it('/Cliente - POST', () => {
-        chai.request(index.app) // Instância do express
+        chai.request(index.index) // Instância do express
             .post('/Clientes') // Rota
             .send({
                 id: '1235',
@@ -58,7 +57,7 @@ describe('Testes de integração', () => {
     });
 
     it('/Cliente - GET', () => {
-        chai.request(index.app)
+        chai.request(index.index)
             .get('/Cliente')
             .end((err, res) => {
                 chai.expect(err).to.be.null;
