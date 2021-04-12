@@ -31,7 +31,7 @@ const clienteSchema = {
 describe('Teste das funcoes de Clientes', () => {
 
     it('addCliente', () => {
-        const cliente = index.create('/Clientes', ClientesController.create);
+        const cliente = index.create('/Clientes', index.create);
 
         // Verifica se as caracteristicas do objeto aluno é igual ao alunoSchema
         chai.expect(cliente).to.containSubset(clienteSchema);
